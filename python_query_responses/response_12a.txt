@@ -1,0 +1,3 @@
+command : python3 query_12a.py --func ingress_node_firewall_main
+
+Compatible hookpoints throughout the FCG of function ingress_node_firewall_main : {'xdp'}
