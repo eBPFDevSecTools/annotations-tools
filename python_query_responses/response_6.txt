@@ -1,0 +1,4 @@
+command : python3 query_6.py --repo cilium --depth 6
+
+List of Functions - {'sock6_pre_bind', 'tail_lb_ipv4', 'lb4_extract_key', 'sock6_post_bind', 'tail_srv6_reply', '__sock6_xlate_rev', 'lb6_extract_key', 'ct_extract_ports4'}
+Number of Functions - 8
