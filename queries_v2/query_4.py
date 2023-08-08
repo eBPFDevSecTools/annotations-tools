@@ -4,7 +4,7 @@ import argparse
 
 warnings.filterwarnings("ignore")
 
-index_name = "tmp2"
+index_name = "tmp3"
 client = Elasticsearch(f"http://localhost:9200")
 
 parser = argparse.ArgumentParser(description="Functions from a user-input repository writing to a user-input map")
@@ -32,7 +32,7 @@ hits = resp.raw['hits']['hits']
 
 funcs = set()
 for dic in hits:
-    funcs.add(dic["_source"]["funcName"].strip())
+    funcs.add(dic["_source"]["funcName"])
 
 print(f"List of Functions - {funcs}")
 counts = len(funcs)

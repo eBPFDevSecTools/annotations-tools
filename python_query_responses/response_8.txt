@@ -1,4 +1,4 @@
 command : python3 query_8.py --func sock6_xlate_rev_v4_in_v6
 
 Maps read throughout the FCG of function sock6_xlate_rev_v4_in_v6
-['  LB4_REVERSE_NAT_SK_MAP', ' map', '  LB4_SERVICES_MAP_V2', '  METRICS_MAP', '  LB4_SERVICES_MAP_V2']
+['LB4_REVERSE_NAT_SK_MAP', 'map', 'LB4_SERVICES_MAP_V2', 'METRICS_MAP', 'LB4_SERVICES_MAP_V2']

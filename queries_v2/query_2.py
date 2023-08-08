@@ -4,7 +4,7 @@ import argparse
 
 warnings.filterwarnings("ignore")
 
-index_name = "tmp2"
+index_name = "tmp3"
 client = Elasticsearch(f"http://localhost:9200")
 
 parser = argparse.ArgumentParser(description="Maps used in a user-input repository")
@@ -22,8 +22,8 @@ hits = resp.raw['hits']['hits']
 
 maps = []
 for dic in hits:
-    maps += list(map(lambda x: x.strip(), dic["_source"]["readMaps"]))
-    maps += list(map(lambda x: x.strip(), dic["_source"]["updateMaps"]))
+    maps += dic["_source"]["readMaps"]
+    maps += dic["_source"]["updateMaps"]
 
 maps = set(maps)
 print(f"List of Maps - {maps}")

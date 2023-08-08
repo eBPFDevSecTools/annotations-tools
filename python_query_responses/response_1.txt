@@ -1,5 +1,5 @@
 command : python3 query_1.py --helper bpf_sock_map_update
 
 List of Functions - {'func'}
-File names of functions - {'/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/wronghelper.c', '/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/ctxoffset.c'}
+File names of functions - {'/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/ctxoffset.c', '/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/wronghelper.c'}
 Number of Functions - 1

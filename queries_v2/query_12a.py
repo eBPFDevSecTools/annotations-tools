@@ -4,7 +4,7 @@ import argparse
 
 warnings.filterwarnings("ignore")
 
-index_name = "tmp2"
+index_name = "tmp3"
 client = Elasticsearch(f"http://localhost:9200")
 
 parser = argparse.ArgumentParser(description="Common hookpoints compatible to all functions in the call graph of the user-input function")
