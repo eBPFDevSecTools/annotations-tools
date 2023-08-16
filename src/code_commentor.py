@@ -292,7 +292,7 @@ def parseTXLFunctionOutputFileForComments(txlFile, opFile, srcFile, helperdict, 
             capability_dict['output'] = output
             capability_dict['helper'] = get_helper_list(lines, helperdict)
             capability_dict['compatibleHookpoints'] = get_compatible_hookpoints(capability_dict['helper'] , helperdict)
-            capability_dict['source'] = lines
+            #capability_dict['source'] = lines
             capability_dict['called_function_list'] = get_called_fn_list(funcName, db_file_name, helperdict)
             if capability_dict['called_function_list'] is not None and not len(capability_dict['called_function_list']):
                 capability_dict["call_depth"] =  0
