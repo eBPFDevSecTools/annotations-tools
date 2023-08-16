@@ -1,4 +1,4 @@
 command : python3 query_7.py --field startLine --value 35
 
-List of Functions - {'func', 'tail_call_dynamic', 'set_encrypt_key_mark', 'ipv4_load_daddr'}
+List of Functions - {'func', 'set_encrypt_key_mark', 'ipv4_load_daddr', 'tail_call_dynamic'}
 Number of Functions - 4

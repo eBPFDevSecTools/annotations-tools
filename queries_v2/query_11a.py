@@ -3,7 +3,7 @@ import warnings
 import argparse
 warnings.filterwarnings("ignore")
 
-index_name = "tmp2"
+index_name = "tmp3"
 client = Elasticsearch(f"http://localhost:9200")
 
 parser = argparse.ArgumentParser(description="Maps used by the functions in the call graph of the user-input function")

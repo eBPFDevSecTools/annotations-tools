@@ -4,7 +4,7 @@ from elasticsearch import Elasticsearch
 import warnings
 warnings.filterwarnings("ignore")
 
-index_name = "tmp2"
+index_name = "tmp3"
 client = Elasticsearch(f"http://localhost:9200")
 
 root_funcs = client.search(index=index_name, pretty=True, source=["funcName"], size=1000, query={
