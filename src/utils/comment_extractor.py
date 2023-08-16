@@ -8,6 +8,14 @@ import os
 from tinydb import Query
 from tinydb.operations import set
 
+'''
+IP: db, list of jsons
+OP: insert the json entries in appropriate place in db
+We will validate the input json against schema before inserting them.
+'''
+def update_db_w_field():
+    return
+
 def update_human_func_description(comments_db,comment_dict):
     funcName = comment_dict['funcName']
     #remove * from function name
