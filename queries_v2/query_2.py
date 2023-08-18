@@ -13,8 +13,8 @@ parser.add_argument("--repo", required=True, help="Name of the Repository")
 args = parser.parse_args()
 
 resp = client.search(index=index_name, pretty=True, source=["readMaps", "updateMaps"], size=1000, query={
-            "fuzzy": {
-                "File": args.repo
+            "match": {
+                "File": f"{args.repo}"
             }
         })
 
@@ -22,8 +22,8 @@ hits = resp.raw['hits']['hits']
 
 maps = []
 for dic in hits:
-    maps += dic["_source"]["readMaps"]
-    maps += dic["_source"]["updateMaps"]
+    maps += list(filter(lambda x: x != "", dic["_source"]["readMaps"]))
+    maps += list(filter(lambda x: x != "", dic["_source"]["updateMaps"]))
 
 maps = set(maps)
 print(f"List of Maps - {maps}")

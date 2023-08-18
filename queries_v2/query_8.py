@@ -12,9 +12,9 @@ parser.add_argument("--func", required=True, help="Function name")
 
 args = parser.parse_args()
 
-def dfs(function_name, readMaps_list):
+def dfs(function_name, readMaps_list, updateMaps_list):
 
-    resp = client.search(index=index_name, pretty=True, source=["called_function_list", "readMaps"], size=1000, query={
+    resp = client.search(index=index_name, pretty=True, source=["called_function_list", "readMaps", "updateMaps"], size=1000, query={
             "bool": {
                 "must": {
                     "match_phrase": {
@@ -26,11 +26,21 @@ def dfs(function_name, readMaps_list):
 
     content = resp["called_function_list"]
     readMaps = resp['readMaps']
+    updateMaps = resp["updateMaps"]
     readMaps_list += readMaps
+    updateMaps_list += updateMaps
+
     for func in content:
-        dfs(func, readMaps_list)
+        dfs(func, readMaps_list, updateMaps_list)
 
 READMAPS = []
-dfs(args.func, READMAPS)
+UPDATEMAPS = []
+dfs(args.func, READMAPS, UPDATEMAPS)
+
+READMAPS = set(READMAPS)
+UPDATEMAPS = set(UPDATEMAPS)
+
+READONLY_MAPS = READMAPS.difference(UPDATEMAPS)
+
 print(f"Maps read throughout the FCG of function {args.func}")
-print(READMAPS)
+print(READONLY_MAPS)

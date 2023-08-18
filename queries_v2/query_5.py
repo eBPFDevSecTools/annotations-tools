@@ -29,11 +29,8 @@ def dfs(function_name, call_graph_dict):
                 }
             }
         })
-    # print(resp)
+
     content = resp.raw["hits"]["hits"][0]["_source"]["called_function_list"]
-    # print(content)
-    # content = resp.raw["hits"]["hits"]
-    # print(len(content))
 
     for func in content:
         dfs(func, call_graph_dict=call_graph_dict[function_name])
