@@ -1,0 +1,146 @@
+,ingress-node-firewall-master,ebpf-ratelimiter-main,cilium,bpf-filter-master,katran,xdp-mptm-main,ebpf-samples,bcc,ingress-node-firewall-master_count,ebpf-ratelimiter-main_count,cilium_count,bpf-filter-master_count,katran_count,xdp-mptm-main_count,ebpf-samples_count,bcc_count
+sock6_post_bind,[],[],"['get_cgroup_classid', 'map_lookup_elem']",[],[],[],[],[],0,0,2,0,0,0,0,0
+sock6_recvmsg,[],[],"['map_update_elem', 'map_delete_elem', 'map_lookup_elem', 'get_prandom_u32', 'get_cgroup_classid', 'get_socket_cookie']",[],[],[],[],[],0,0,6,0,0,0,0,0
+__swab64s,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_icmp6_send_time_exceeded,[],[],"['csum_diff', 'XDP_TX', 'map_lookup_elem', 'redirect']",[],[],[],[],[],0,0,4,0,0,0,0,0
+tail_nodeport_ipv6_dsr,[],[],"['xdp_adjust_tail', 'XDP_TX', 'xdp_adjust_head', 'redirect', 'map_update_elem', 'csum_diff', 'skb_change_head', 'fib_lookup', 'map_lookup_elem', 'bpf_fib_lookup']",[],[],[],[],[],0,0,10,0,0,0,0,0
+reallocate_invalidates,[],[],[],[],[],[],['bpf_skb_change_head'],[],0,0,0,0,0,0,1,0
+custom_hook,[],[],"['map_update_elem', 'map_lookup_elem']",[],[],[],[],[],0,0,2,0,0,0,0,0
+__be16_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__swahb32s,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+handle_to_container,[],[],"['map_update_elem', 'CTX_ACT_OK', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,4,0,0,0,0,0
+jhash_1word,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+l3_csum_replace,[],[],['l3_csum_replace'],[],[],[],[],[],0,0,1,0,0,0,0,0
+csum_diff,[],[],['csum_diff'],[],[],[],[],[],0,0,1,0,0,0,0,0
+handle_lxc_traffic,[],[],"['CTX_ACT_OK', 'send_signal', 'map_update_elem', 'get_smp_processor_id', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,6,0,0,0,0,0
+_send_drop_notify,[],[],"['map_update_elem', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,3,0,0,0,0,0
+__cpu_to_le16p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ipv4_load_daddr,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock4_connect,[],[],"['sk_lookup_tcp', 'sk_release', 'sk_lookup_udp', 'map_update_elem', 'map_delete_elem', 'map_lookup_elem', 'get_prandom_u32', 'get_cgroup_classid', 'get_socket_cookie']",[],[],[],[],[],0,0,9,0,0,0,0,0
+tail_ipv6_to_endpoint,[],[],"['CTX_ACT_OK', 'XDP_TX', 'send_signal', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'l3_csum_replace', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,11,0,0,0,0,0
+sock4_pre_bind,[],[],"['map_update_elem', 'get_cgroup_classid', 'get_socket_cookie']",[],[],[],[],[],0,0,3,0,0,0,0,0
+to_overlay,[],[],"['CTX_ACT_OK', 'map_update_elem', 'ktime_get_ns', 'csum_diff', 'l4_csum_replace', 'map_lookup_elem']",[],[],[],[],[],0,0,6,0,0,0,0,0
+combine_ports,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+rol32,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_handle_ipv6_cont,[],[],"['CTX_ACT_OK', 'XDP_TX', 'send_signal', 'redirect', 'map_update_elem', 'fib_lookup', 'get_smp_processor_id', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem', 'bpf_fib_lookup']",[],[],[],[],[],0,0,12,0,0,0,0,0
+tail_icmp6_handle_ns,[],[],"['csum_diff', 'XDP_TX', 'map_lookup_elem', 'redirect']",[],[],[],[],[],0,0,4,0,0,0,0,0
+ipv6_extract_tuple,[],[],['CTX_ACT_OK'],[],[],[],[],[],0,0,1,0,0,0,0,0
+from_netdev,[],[],"['CTX_ACT_OK', 'XDP_TX', 'redirect', 'map_update_elem', 'fib_lookup', 'csum_diff', 'tail_call', 'map_lookup_elem', 'bpf_fib_lookup']",[],[],[],[],[],0,0,9,0,0,0,0,0
+__le64_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__le16_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock6_connect,[],[],"['sk_lookup_tcp', 'sk_release', 'sk_lookup_udp', 'map_update_elem', 'map_delete_elem', 'map_lookup_elem', 'get_prandom_u32', 'get_cgroup_classid', 'get_socket_cookie']",[],[],[],[],[],0,0,9,0,0,0,0,0
+tail_handle_ipv4_from_host,[],[],"['CTX_ACT_OK', 'TC_ACT_REDIRECT', 'XDP_TX', 'send_signal', 'xdp_adjust_head', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'map_delete_elem', 'l3_csum_replace', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,14,0,0,0,0,0
+from_host,[],[],"['CTX_ACT_OK', 'XDP_TX', 'redirect', 'map_update_elem', 'fib_lookup', 'csum_diff', 'tail_call', 'map_lookup_elem', 'bpf_fib_lookup']",[],[],[],[],[],0,0,9,0,0,0,0,0
+TRACEPOINT_PROBE,[],[],[],[],[],[],[],['bpf_trace_printk'],0,0,0,0,0,0,0,1
+l4_csum_replace,[],[],['l4_csum_replace'],[],[],[],[],[],0,0,1,0,0,0,0,0
+tail_nodeport_nat_ipv4,[],[],"['CTX_ACT_OK', 'tail_call', 'XDP_TX', 'send_signal', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'map_delete_elem', 'get_prandom_u32', 'csum_diff', 'skb_change_head', 'l4_csum_replace', 'fib_lookup', 'map_lookup_elem', 'bpf_fib_lookup']",[],[],[],[],[],0,0,15,0,0,0,0,0
+tail_handle_ipv4_cont,[],[],"['CTX_ACT_OK', 'XDP_TX', 'send_signal', 'redirect', 'map_update_elem', 'fib_lookup', 'get_smp_processor_id', 'l3_csum_replace', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem', 'bpf_fib_lookup']",[],[],[],[],[],0,0,13,0,0,0,0,0
+jhash_2words,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_nodeport_ipv4_dsr,[],[],"['xdp_adjust_tail', 'XDP_TX', 'xdp_adjust_head', 'redirect', 'map_update_elem', 'csum_diff', 'skb_change_head', 'fib_lookup', 'map_lookup_elem', 'bpf_fib_lookup']",[],[],[],[],[],0,0,10,0,0,0,0,0
+ingress_node_firewall_process,"['XDP_DROP', 'XDP_PASS', 'bpf_perf_event_output', 'bpf_map_update_elem', 'bpf_map_lookup_elem']",[],[],[],[],[],[],[],5,0,0,0,0,0,0,0
+foo,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+gue_encap_v4,[],[],[],[],"['bpf_csum_diff', 'bpf_map_lookup_elem']",[],[],[],0,0,0,0,2,0,0,0
+sock6_getpeername,[],[],"['map_update_elem', 'map_delete_elem', 'map_lookup_elem', 'get_prandom_u32', 'get_cgroup_classid', 'get_socket_cookie']",[],[],[],[],[],0,0,6,0,0,0,0,0
+RAW_TRACEPOINT_PROBE,[],[],[],[],[],[],[],['bpf_ktime_get_ns'],0,0,0,0,0,0,0,1
+ipv6_load_nexthdr,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+func,[],[],[],[],[],[],['bpf_map_update_elem'],[],0,0,0,0,0,0,1,0
+bpf_filter,[],[],[],"['TC_ACT_SHOT', 'TC_ACT_OK', 'bpf_trace_printk', 'bpf_map_lookup_elem']",[],[],[],[],0,0,0,4,0,0,0,0
+xdp_store_bytes,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+hash_64,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+test_packet_access,[],[],[],[],[],[],['get_prandom_u32'],[],0,0,0,0,0,0,1,0
+tail_ipv4_host_policy_ingress,[],[],"['CTX_ACT_OK', 'send_signal', 'map_update_elem', 'get_smp_processor_id', 'map_lookup_elem']",[],[],[],[],[],0,0,5,0,0,0,0,0
+test,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__fswab64,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+healthcheck_encap,[],[],[],[],"['TC_ACT_SHOT', 'bpf_map_lookup_elem', 'TC_ACT_UNSPEC', 'bpf_redirect']",[],[],[],0,0,0,0,4,0,0,0
+ct4_cilium_dbg_tuple,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_ipv6_host_policy_ingress,[],[],"['send_signal', 'CTX_ACT_OK', 'get_smp_processor_id', 'map_lookup_elem']",[],[],[],[],[],0,0,4,0,0,0,0,0
+bpf_xdp_entry,[],[],"['CTX_ACT_OK', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,3,0,0,0,0,0
+tail_handle_arp,[],[],"['CTX_ACT_OK', 'XDP_TX', 'redirect', 'map_update_elem', 'map_lookup_elem']",[],[],[],[],[],0,0,5,0,0,0,0,0
+__cpu_to_be32p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+handle_policy,[],[],['map_lookup_elem'],[],[],[],[],[],0,0,1,0,0,0,0,0
+hello,[],[],[],[],[],[],[],['bpf_trace_printk'],0,0,0,0,0,0,0,1
+__cpu_to_le32p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ct_delete6,[],[],"['map_delete_elem', 'map_lookup_elem']",[],[],[],[],[],0,0,2,0,0,0,0,0
+ipv6_addr_is_mapped,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__fswab16,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__swab32s,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__le32_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_srv6_encap,[],[],"['map_update_elem', 'xdp_adjust_head', 'CTX_ACT_OK', 'map_lookup_elem']",[],[],[],[],[],0,0,4,0,0,0,0,0
+ct_delete4,[],[],"['map_delete_elem', 'map_lookup_elem']",[],[],[],[],[],0,0,2,0,0,0,0,0
+encap_v4,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+callee,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__bpf_no_builtin_memset,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_lb_ipv6,[],[],"['CTX_ACT_OK', 'send_signal', 'XDP_TX', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'map_delete_elem', 'l3_csum_replace', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,12,0,0,0,0,0
+sock6_pre_bind,[],[],"['map_update_elem', 'get_cgroup_classid', 'get_socket_cookie']",[],[],[],[],[],0,0,3,0,0,0,0,0
+tail_srv6_reply,[],[],"['xdp_adjust_head', 'CTX_ACT_OK', 'map_lookup_elem']",[],[],[],[],[],0,0,3,0,0,0,0,0
+ipv4_l4_csum,[],[],[],[],['bpf_csum_diff'],[],[],[],0,0,0,0,1,0,0,0
+tail_handle_nat_fwd_ipv4,[],[],"['CTX_ACT_OK', 'send_signal', 'map_update_elem', 'get_smp_processor_id', 'map_delete_elem', 'get_prandom_u32', 'csum_diff', 'l4_csum_replace', 'map_lookup_elem']",[],[],[],[],[],0,0,9,0,0,0,0,0
+sock4_post_bind,[],[],"['get_cgroup_classid', 'map_lookup_elem']",[],[],[],[],[],0,0,2,0,0,0,0,0
+tail_handle_ipv6_from_netdev,[],[],"['CTX_ACT_OK', 'TC_ACT_REDIRECT', 'XDP_TX', 'send_signal', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'map_delete_elem', 'l3_csum_replace', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,13,0,0,0,0,0
+to_netdev,[],[],"['CTX_ACT_OK', 'send_signal', 'XDP_TX', 'get_socket_cookie', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'ktime_get_ns', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,10,0,0,0,0,0
+xdp_prog_simple,[],[],[],[],"['XDP_DROP', 'bpf_csum_diff', 'XDP_TX', 'XDP_PASS', 'bpf_get_smp_processor_id', 'bpf_map_update_elem', 'bpf_ktime_get_ns', 'bpf_map_lookup_elem', 'bpf_tail_call']",[],[],[],0,0,0,0,9,0,0,0
+tail_ipv6_policy,[],[],"['CTX_ACT_OK', 'send_signal', 'XDP_TX', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,10,0,0,0,0,0
+__be32_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock4_recvmsg,[],[],"['map_update_elem', 'map_delete_elem', 'map_lookup_elem', 'get_prandom_u32', 'get_cgroup_classid', 'get_socket_cookie']",[],[],[],[],[],0,0,6,0,0,0,0,0
+ipv6_addr_in_net,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+memmove,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_ipv4_policy,[],[],"['CTX_ACT_OK', 'send_signal', 'XDP_TX', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,10,0,0,0,0,0
+send_signal,[],[],['send_signal'],[],[],[],[],[],0,0,1,0,0,0,0,0
+sock4_getpeername,[],[],"['map_update_elem', 'map_delete_elem', 'map_lookup_elem', 'get_prandom_u32', 'get_cgroup_classid', 'get_socket_cookie']",[],[],[],[],[],0,0,6,0,0,0,0,0
+tail_handle_ipv4_from_netdev,[],[],"['CTX_ACT_OK', 'TC_ACT_REDIRECT', 'XDP_TX', 'send_signal', 'xdp_adjust_head', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'map_delete_elem', 'l3_csum_replace', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,14,0,0,0,0,0
+handle_policy_egress,[],[],"['map_update_elem', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,3,0,0,0,0,0
+gue_encap_v6,[],[],[],[],"['bpf_csum_diff', 'bpf_map_lookup_elem']",[],[],[],0,0,0,0,2,0,0,0
+jhash,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__be64_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+mptm_encap,[],[],[],[],[],"['XDP_DROP', 'bpf_redirect_map', 'XDP_PASS', 'XDP_ABORTED', 'bpf_redirect', 'bpf_xdp_adjust_head', 'bpf_map_lookup_elem']",[],[],0,0,0,0,0,7,0,0
+caller,[],[],[],[],[],[],['bpf_tail_call'],[],0,0,0,0,0,0,1,0
+hc_encap_ipip,[],[],[],[],['bpf_map_lookup_elem'],[],[],[],0,0,0,0,1,0,0,0
+__revalidate_data_pull,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_handle_nat_fwd_ipv6,[],[],"['CTX_ACT_OK', 'send_signal', 'map_update_elem', 'get_smp_processor_id', 'map_delete_elem', 'get_prandom_u32', 'csum_diff', 'l4_csum_replace', 'map_lookup_elem']",[],[],[],[],[],0,0,9,0,0,0,0,0
+__bpf_no_builtin_memcmp,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+from_network,[],[],"['CTX_ACT_OK', 'XDP_TX', 'CTX_ACT_REDIRECT', 'redirect', 'map_update_elem', 'map_lookup_elem']",[],[],[],[],[],0,0,6,0,0,0,0,0
+__cpu_to_le64p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__cpu_to_be16p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__fswahw32,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_icmp6_send_echo_reply,[],[],"['csum_diff', 'XDP_TX', 'map_lookup_elem', 'redirect']",[],[],[],[],[],0,0,4,0,0,0,0,0
+mptm_pass,[],[],[],[],[],['XDP_PASS'],[],[],0,0,0,0,0,1,0,0
+assign_socket,[],[],"['skc_lookup_tcp', 'sk_lookup_udp', 'CTX_ACT_OK', 'sk_release']",[],[],[],[],[],0,0,4,0,0,0,0,0
+bpf_redir_proxy,[],[],"['CTX_ACT_OK', 'map_lookup_elem', 'msg_redirect_hash']",[],[],[],[],[],0,0,3,0,0,0,0,0
+__bpf_no_builtin_memcpy,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_handle_ipv6_from_host,[],[],"['CTX_ACT_OK', 'TC_ACT_REDIRECT', 'XDP_TX', 'send_signal', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'map_delete_elem', 'l3_csum_replace', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,13,0,0,0,0,0
+handle_xgress,[],[],"['map_update_elem', 'CTX_ACT_OK', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,4,0,0,0,0,0
+main,[],"['strtol', 'bpf_map_update_elem']",[],[],[],[],[],[],0,2,0,0,0,0,0,0
+ipv4_extract_tuple,[],[],['CTX_ACT_OK'],[],[],[],[],[],0,0,1,0,0,0,0,0
+read_write_packet_start,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__swahw32s,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__send_drop_notify,[],[],['map_lookup_elem'],[],[],[],[],[],0,0,1,0,0,0,0,0
+hc_encap_gue,[],[],[],[],['bpf_map_lookup_elem'],[],[],[],0,0,0,0,1,0,0,0
+bpf_tail_call_static,['bpf_tail_call'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+tail_rev_nodeport_lb6,[],[],"['CTX_ACT_OK', 'tail_call', 'xdp_adjust_head', 'send_signal', 'XDP_TX', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'csum_diff', 'skb_change_head', 'l4_csum_replace', 'fib_lookup', 'map_lookup_elem', 'bpf_fib_lookup']",[],[],[],[],[],0,0,14,0,0,0,0,0
+__fswahb32,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock4_sendmsg,[],[],"['sk_lookup_tcp', 'sk_release', 'sk_lookup_udp', 'map_update_elem', 'map_delete_elem', 'map_lookup_elem', 'get_prandom_u32', 'get_cgroup_classid', 'get_socket_cookie']",[],[],[],[],[],0,0,9,0,0,0,0,0
+balancer_ingress,[],[],[],[],"['XDP_DROP', 'bpf_csum_diff', 'XDP_TX', 'XDP_PASS', 'bpf_get_smp_processor_id', 'bpf_map_update_elem', 'bpf_ktime_get_ns', 'bpf_map_lookup_elem', 'bpf_tail_call']",[],[],[],0,0,0,0,9,0,0,0
+from_overlay,[],[],"['map_update_elem', 'CTX_ACT_OK', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,4,0,0,0,0,0
+tail_ipv4_to_endpoint,[],[],"['CTX_ACT_OK', 'send_signal', 'XDP_TX', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'l3_csum_replace', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,11,0,0,0,0,0
+xdp_val,[],[],[],[],"['XDP_PASS', 'bpf_tail_call']",[],[],[],0,0,0,0,2,0,0,0
+tail_lb_ipv4,[],[],"['CTX_ACT_OK', 'send_signal', 'xdp_adjust_head', 'XDP_TX', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'map_delete_elem', 'l3_csum_replace', 'csum_diff', 'l4_csum_replace', 'tail_call', 'map_lookup_elem']",[],[],[],[],[],0,0,13,0,0,0,0,0
+bpf_sockmap,[],[],"['sock_hash_update', 'CTX_ACT_OK', 'map_lookup_elem', 'redirect']",[],[],[],[],[],0,0,4,0,0,0,0,0
+tail_nodeport_nat_ipv6,[],[],"['CTX_ACT_OK', 'tail_call', 'send_signal', 'XDP_TX', 'xdp_adjust_head', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'map_delete_elem', 'get_prandom_u32', 'csum_diff', 'skb_change_head', 'l4_csum_replace', 'fib_lookup', 'map_lookup_elem', 'bpf_fib_lookup']",[],[],[],[],[],0,0,16,0,0,0,0,0
+submit_event,[],[],[],[],"['bpf_map_lookup_elem', 'bpf_perf_event_output']",[],[],[],0,0,0,0,2,0,0,0
+to_host,[],[],"['CTX_ACT_OK', 'send_signal', 'map_update_elem', 'get_smp_processor_id', 'map_lookup_elem']",[],[],[],[],[],0,0,5,0,0,0,0,0
+xdp_root,[],[],[],[],"['XDP_PASS', 'bpf_tail_call']",[],[],[],0,0,0,0,2,0,0,0
+mptm_redirect,[],[],[],[],[],"['bpf_redirect_map', 'bpf_redirect']",[],[],0,0,0,0,0,2,0,0
+tail_rev_nodeport_lb4,[],[],"['CTX_ACT_OK', 'tail_call', 'send_signal', 'XDP_TX', 'redirect', 'map_update_elem', 'get_smp_processor_id', 'csum_diff', 'skb_change_head', 'l4_csum_replace', 'fib_lookup', 'map_lookup_elem', 'bpf_fib_lookup']",[],[],[],[],[],0,0,13,0,0,0,0,0
+__swab16s,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+test_repro,[],[],[],[],[],[],['bpf_map_lookup_elem'],[],0,0,0,0,0,0,1,0
+encap_v6,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ipv6_load_paylen,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__cpu_to_be64p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+pktcntr,[],[],[],[],"['bpf_map_lookup_elem', 'XDP_PASS']",[],[],[],0,0,0,0,2,0,0,0
+tail_srv6_decap,[],[],"['map_update_elem', 'xdp_adjust_head', 'CTX_ACT_OK', 'map_lookup_elem']",[],[],[],[],[],0,0,4,0,0,0,0,0
+sock6_sendmsg,[],[],"['sk_lookup_tcp', 'sk_release', 'sk_lookup_udp', 'map_update_elem', 'map_delete_elem', 'map_lookup_elem', 'get_prandom_u32', 'get_cgroup_classid', 'get_socket_cookie']",[],[],[],[],[],0,0,9,0,0,0,0,0
+xdp_load_bytes,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__bpf_no_builtin_memmove,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+mptm_decap,[],[],[],[],[],"['XDP_DROP', 'bpf_redirect_map', 'XDP_PASS', 'bpf_redirect', 'bpf_xdp_adjust_head', 'bpf_map_lookup_elem']",[],[],0,0,0,0,0,6,0,0
+gue_record_route,[],[],[],[],['bpf_get_smp_processor_id'],[],[],[],0,0,0,0,1,0,0,0
+,,,,,,,,,6,2,446,4,38,16,5,3

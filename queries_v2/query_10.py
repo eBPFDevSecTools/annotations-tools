@@ -32,6 +32,11 @@ def dfs(function_name, readMaps_list, updateMaps_list):
 READ_MAPS = []
 WRITE_MAPS = []
 dfs(args.func, READ_MAPS, WRITE_MAPS)
+
+READ_MAPS = set(READ_MAPS)
+WRITE_MAPS = set(WRITE_MAPS)
+
+READWRITE_MAPS = READ_MAPS.intersection(WRITE_MAPS)
+
 print(f"Maps used throughout the FCG of function {args.func}")
-print("Read Maps : ", READ_MAPS)
-print("Written Maps : ", WRITE_MAPS)
+print("Read and Write Maps : ", READWRITE_MAPS)
