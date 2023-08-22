@@ -2,6 +2,28 @@ import argparse
 import json
 import glob
 import comment_extractor as extractor
+import jsonschema
+from jsonschema import validate
+
+
+def validate_human_comments(human_comments:str) -> bool:
+    human_comments_schema_file = "../../assets/templates/human_annotations-schema.json"
+
+    with open(human_comments_schema_file) as schema_file:
+        schema_json = json.load(schema_file)
+        print(schema_json)  
+        json_data = json.loads(human_comments)
+        print("-------------")
+        print(json_data)
+        try:
+            validate(instance=json_data, schema=schema_json)
+            return True
+        except jsonschema.exceptions.ValidationError as ex:
+            print(ex)
+            return False
+                    
+
+
 
 def extract_and_validate_comments_from_json(file_name,start_pattern,end_pattern):
     comments_list = []
@@ -31,7 +53,32 @@ def extract_and_validate_comments_from_json(file_name,start_pattern,end_pattern)
 
 
 if __name__ == "__main__":
+    '''
     
+    human_comments="""
+    {
+    "gitRepoUrl":"https://github.com/vbpf/ebpf-samples",
+    "commitId":"e052151f8cf3b3d65bfaade6255318a566457fbb",
+    "humanFuncDescription":[
+        {
+            "filePath":"tail_call.c",
+            "description":"This is a callee function location which returns 42",
+            "author":"Utkalika Satapathy",
+            "authorEmail":"utkalika.satapathy01@gmail.com",
+            "date":"14.02.2023",
+            "funcName":"callee",
+            "startLine":33,
+            "endLine":37
+        }
+    ]
+
+}
+"""
+    validate_human_comments(human_comments)
+    
+    exit(0)
+
+'''
     AUTHOR = 'author'
     AUTHOR_NAME = 'authorName'
     AUTHOR_EMAIL = 'authorEmail'
