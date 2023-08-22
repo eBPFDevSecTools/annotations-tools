@@ -1,0 +1,652 @@
+[
+  {
+    "func1": {
+      "Name": "send_trace_notify4",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/trace.h",
+      "Key": 206
+    },
+    "func2": {
+      "Name": "send_trace_notify6",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/trace.h",
+      "Key": 208
+    },
+    "similarity": 0.9932081147885898
+  },
+  {
+    "func1": {
+      "Name": "caller",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/tail_call_bad.c",
+      "Key": 737
+    },
+    "func2": {
+      "Name": "caller",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/tail_call.c",
+      "Key": 738
+    },
+    "similarity": 0.9897388238621945
+  },
+  {
+    "func1": {
+      "Name": "ct_update6_backend_id",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h",
+      "Key": 276
+    },
+    "func2": {
+      "Name": "ct_update4_backend_id",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h",
+      "Key": 280
+    },
+    "similarity": 0.9891251145699436
+  },
+  {
+    "func1": {
+      "Name": "send_trace_notify",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/trace.h",
+      "Key": 204
+    },
+    "func2": {
+      "Name": "send_trace_notify4",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/trace.h",
+      "Key": 206
+    },
+    "similarity": 0.987958909749166
+  },
+  {
+    "func1": {
+      "Name": "send_trace_notify",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/trace.h",
+      "Key": 204
+    },
+    "func2": {
+      "Name": "send_trace_notify6",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/trace.h",
+      "Key": 208
+    },
+    "similarity": 0.9842954965078492
+  },
+  {
+    "func1": {
+      "Name": "_xdp_ratelimiting",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_kern.c",
+      "Key": 703
+    },
+    "func2": {
+      "Name": "_xdp_ratelimiting",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_kern.c",
+      "Key": 721
+    },
+    "similarity": 0.9823474077475455
+  },
+  {
+    "func1": {
+      "Name": "lb4_svc_is_affinity",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h",
+      "Key": 472
+    },
+    "func2": {
+      "Name": "lb6_svc_is_affinity",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h",
+      "Key": 473
+    },
+    "similarity": 0.9782091929215766
+  },
+  {
+    "func1": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/mapunderflow.c",
+      "Key": 743
+    },
+    "func2": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/mapoverflow.c",
+      "Key": 755
+    },
+    "similarity": 0.966494989372727
+  },
+  {
+    "func1": {
+      "Name": "ct_has_nodeport_egress_entry4",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h",
+      "Key": 284
+    },
+    "func2": {
+      "Name": "ct_has_nodeport_egress_entry6",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h",
+      "Key": 285
+    },
+    "similarity": 0.9647392313624709
+  },
+  {
+    "func1": {
+      "Name": "sock4_getpeername",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c",
+      "Key": 89
+    },
+    "func2": {
+      "Name": "sock6_getpeername",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c",
+      "Key": 113
+    },
+    "similarity": 0.9644877732611633
+  },
+  {
+    "func1": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/exposeptr2.c",
+      "Key": 741
+    },
+    "func2": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/mapoverflow.c",
+      "Key": 755
+    },
+    "similarity": 0.9640330154762364
+  },
+  {
+    "func1": {
+      "Name": "strsep",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 705
+    },
+    "func2": {
+      "Name": "strsep",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 723
+    },
+    "similarity": 0.9632175359794751
+  },
+  {
+    "func1": {
+      "Name": "ct_update6_dsr",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h",
+      "Key": 278
+    },
+    "func2": {
+      "Name": "ct_update4_dsr",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h",
+      "Key": 282
+    },
+    "similarity": 0.9627703367897359
+  },
+  {
+    "func1": {
+      "Name": "__le32_to_cpup",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/little_endian.h",
+      "Key": 626
+    },
+    "func2": {
+      "Name": "__le16_to_cpup",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/little_endian.h",
+      "Key": 630
+    },
+    "similarity": 0.9620059124601477
+  },
+  {
+    "func1": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/exposeptr2.c",
+      "Key": 741
+    },
+    "func2": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/exposeptr.c",
+      "Key": 749
+    },
+    "similarity": 0.9617010385920955
+  },
+  {
+    "func1": {
+      "Name": "jhash",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/jhash.h",
+      "Key": 290
+    },
+    "func2": {
+      "Name": "jhash",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/katran/jhash.h",
+      "Key": 814
+    },
+    "similarity": 0.9615696532725978
+  },
+  {
+    "func1": {
+      "Name": "delete_stale_entries",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 714
+    },
+    "func2": {
+      "Name": "delete_stale_entries",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 732
+    },
+    "similarity": 0.9609443921341138
+  },
+  {
+    "func1": {
+      "Name": "ctx_redirect_to_proxy4",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/proxy.h",
+      "Key": 425
+    },
+    "func2": {
+      "Name": "ctx_redirect_to_proxy6",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/proxy.h",
+      "Key": 426
+    },
+    "similarity": 0.9605587333225979
+  },
+  {
+    "func1": {
+      "Name": "csum_fold_helper",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/katran/csum_helpers.h",
+      "Key": 829
+    },
+    "func2": {
+      "Name": "csum_fold_helper",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/xdp-mptm-main/src/kernel/lib/pkt-encap.h",
+      "Key": 881
+    },
+    "similarity": 0.9596977953399467
+  },
+  {
+    "func1": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/exposeptr.c",
+      "Key": 749
+    },
+    "func2": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/mapoverflow.c",
+      "Key": 755
+    },
+    "similarity": 0.9594937489509212
+  },
+  {
+    "func1": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/mapunderflow.c",
+      "Key": 743
+    },
+    "func2": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/exposeptr.c",
+      "Key": 749
+    },
+    "similarity": 0.9567319948240262
+  },
+  {
+    "func1": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/exposeptr2.c",
+      "Key": 741
+    },
+    "func2": {
+      "Name": "func",
+      "File": "/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/mapunderflow.c",
+      "Key": 743
+    },
+    "similarity": 0.9559568078060701
+  },
+  {
+    "func1": {
+      "Name": "lb6_affinity_backend_id_by_addr",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h",
+      "Key": 500
+    },
+    "func2": {
+      "Name": "lb4_affinity_backend_id_by_addr",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h",
+      "Key": 524
+    },
+    "similarity": 0.9530347344930724
+  },
+  {
+    "func1": {
+      "Name": "get_length",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 709
+    },
+    "func2": {
+      "Name": "get_length",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 727
+    },
+    "similarity": 0.9501342650153368
+  },
+  {
+    "func1": {
+      "Name": "ipv4_csum_inline",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/katran/csum_helpers.h",
+      "Key": 832
+    },
+    "func2": {
+      "Name": "ipv4_csum_inline",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/xdp-mptm-main/src/kernel/lib/pkt-encap.h",
+      "Key": 882
+    },
+    "similarity": 0.9497005453701176
+  },
+  {
+    "func1": {
+      "Name": "sock4_sendmsg",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c",
+      "Key": 87
+    },
+    "func2": {
+      "Name": "sock6_sendmsg",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c",
+      "Key": 111
+    },
+    "similarity": 0.9475075089912645
+  },
+  {
+    "func1": {
+      "Name": "ctx_redirect_to_proxy_hairpin_ipv4",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/proxy_hairpin.h",
+      "Key": 385
+    },
+    "func2": {
+      "Name": "ctx_redirect_to_proxy_hairpin_ipv6",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/proxy_hairpin.h",
+      "Key": 386
+    },
+    "similarity": 0.9463406932466715
+  },
+  {
+    "func1": {
+      "Name": "signal_handler",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 712
+    },
+    "func2": {
+      "Name": "signal_handler",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 730
+    },
+    "similarity": 0.944790216683605
+  },
+  {
+    "func1": {
+      "Name": "__le64_to_cpup",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/little_endian.h",
+      "Key": 622
+    },
+    "func2": {
+      "Name": "__le32_to_cpup",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/little_endian.h",
+      "Key": 626
+    },
+    "similarity": 0.9438272217518332
+  },
+  {
+    "func1": {
+      "Name": "is_valid_lxc_src_ip",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lxc.h",
+      "Key": 431
+    },
+    "func2": {
+      "Name": "is_valid_lxc_src_ipv4",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lxc.h",
+      "Key": 433
+    },
+    "similarity": 0.9404759091883049
+  },
+  {
+    "func1": {
+      "Name": "cilium_capture4_masked_key",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/pcap.h",
+      "Key": 164
+    },
+    "func2": {
+      "Name": "cilium_capture6_masked_key",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/pcap.h",
+      "Key": 166
+    },
+    "similarity": 0.9402378685778993
+  },
+  {
+    "func1": {
+      "Name": "ct_update6_rev_nat_index",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h",
+      "Key": 277
+    },
+    "func2": {
+      "Name": "ct_update4_rev_nat_index",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h",
+      "Key": 281
+    },
+    "similarity": 0.9393411909977956
+  },
+  {
+    "func1": {
+      "Name": "__le32_to_cpup",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/big_endian.h",
+      "Key": 625
+    },
+    "func2": {
+      "Name": "__le32_to_cpup",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/little_endian.h",
+      "Key": 626
+    },
+    "similarity": 0.9390704883332982
+  },
+  {
+    "func1": {
+      "Name": "__cpu_to_le64p",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/little_endian.h",
+      "Key": 620
+    },
+    "func2": {
+      "Name": "__le64_to_cpup",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/little_endian.h",
+      "Key": 622
+    },
+    "similarity": 0.9381362157680977
+  },
+  {
+    "func1": {
+      "Name": "__cpu_to_be16p",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/big_endian.h",
+      "Key": 639
+    },
+    "func2": {
+      "Name": "__cpu_to_be16p",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/little_endian.h",
+      "Key": 640
+    },
+    "similarity": 0.9378938172912094
+  },
+  {
+    "func1": {
+      "Name": "trim_space",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 715
+    },
+    "func2": {
+      "Name": "trim_space",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 733
+    },
+    "similarity": 0.9376234998401857
+  },
+  {
+    "func1": {
+      "Name": "snat_v4_delete_tuples",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h",
+      "Key": 571
+    },
+    "func2": {
+      "Name": "snat_v6_delete_tuples",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h",
+      "Key": 588
+    },
+    "similarity": 0.9374185184114321
+  },
+  {
+    "func1": {
+      "Name": "jhash_2words",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/jhash.h",
+      "Key": 293
+    },
+    "func2": {
+      "Name": "jhash_1word",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/katran/jhash.h",
+      "Key": 817
+    },
+    "similarity": 0.9372777010944428
+  },
+  {
+    "func1": {
+      "Name": "__le16_to_cpup",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/big_endian.h",
+      "Key": 629
+    },
+    "func2": {
+      "Name": "__be16_to_cpup",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/byteorder/little_endian.h",
+      "Key": 642
+    },
+    "similarity": 0.9372670573315611
+  },
+  {
+    "func1": {
+      "Name": "lb4_svc_is_hostport",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h",
+      "Key": 465
+    },
+    "func2": {
+      "Name": "lb6_svc_is_hostport",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h",
+      "Key": 466
+    },
+    "similarity": 0.936839555132179
+  },
+  {
+    "func1": {
+      "Name": "log_timestamp",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 708
+    },
+    "func2": {
+      "Name": "log_timestamp",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 726
+    },
+    "similarity": 0.9364688647755163
+  },
+  {
+    "func1": {
+      "Name": "srv6_handling4",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/egress_policies.h",
+      "Key": 192
+    },
+    "func2": {
+      "Name": "srv6_handling6",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/egress_policies.h",
+      "Key": 193
+    },
+    "similarity": 0.9360852498622443
+  },
+  {
+    "func1": {
+      "Name": "sock4_wildcard_lookup_full",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c",
+      "Key": 76
+    },
+    "func2": {
+      "Name": "sock6_wildcard_lookup_full",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c",
+      "Key": 97
+    },
+    "similarity": 0.9337120522028065
+  },
+  {
+    "func1": {
+      "Name": "tail_handle_ipv4",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_overlay.c",
+      "Key": 34
+    },
+    "func2": {
+      "Name": "tail_handle_ipv4",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_host.c",
+      "Key": 36
+    },
+    "similarity": 0.9301565116446012
+  },
+  {
+    "func1": {
+      "Name": "__swab32p",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/swab.h",
+      "Key": 610
+    },
+    "func2": {
+      "Name": "__swab32s",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/include/linux/swab.h",
+      "Key": 615
+    },
+    "similarity": 0.9296195668587425
+  },
+  {
+    "func1": {
+      "Name": "update_ports",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 717
+    },
+    "func2": {
+      "Name": "update_ports",
+      "File": "/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c",
+      "Key": 735
+    },
+    "similarity": 0.9295860014853439
+  },
+  {
+    "func1": {
+      "Name": "__lb6_lookup_backend",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h",
+      "Key": 490
+    },
+    "func2": {
+      "Name": "__lb4_lookup_backend",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h",
+      "Key": 516
+    },
+    "similarity": 0.929262826441553
+  },
+  {
+    "func1": {
+      "Name": "__cilium_capture_in",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/pcap.h",
+      "Key": 162
+    },
+    "func2": {
+      "Name": "cilium_capture_out",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/pcap.h",
+      "Key": 173
+    },
+    "similarity": 0.9287577162703035
+  },
+  {
+    "func1": {
+      "Name": "jhash_2words",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/jhash.h",
+      "Key": 293
+    },
+    "func2": {
+      "Name": "jhash_1word",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/jhash.h",
+      "Key": 294
+    },
+    "similarity": 0.9287283290562435
+  },
+  {
+    "func1": {
+      "Name": "is_valid_lxc_src_ip",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lxc.h",
+      "Key": 430
+    },
+    "func2": {
+      "Name": "is_valid_lxc_src_ip",
+      "File": "/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lxc.h",
+      "Key": 431
+    },
+    "similarity": 0.9282871480965931
+  }
+]
