@@ -270,6 +270,7 @@ if __name__ == "__main__":
     if check_if_file_does_not_exist(files)  == True:
         print("Input file does not Exist..Quitting")
         exit(0)
+
     '''
     files.clear()
     files.append(comments_db_file)
