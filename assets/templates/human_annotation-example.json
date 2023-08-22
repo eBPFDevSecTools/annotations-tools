@@ -1,0 +1,17 @@
+{
+    "gitRepoUrl":"https://github.com/vbpf/ebpf-samples",
+    "commitId":"e052151f8cf3b3d65bfaade6255318a566457fbb",
+    "humanFuncDescription":[
+        {
+            "filePath":"tail_call.c",
+            "description":"This is a callee function location which returns 42",
+            "author":"Utkalika Satapathy",
+            "authorEmail":"utkalika.satapathy01@gmail.com",
+            "date":"14.02.2023",
+            "funcName":"callee",
+            "startLine":33,
+            "endLine":37
+        }
+    ]
+
+}

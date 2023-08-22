@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "gitRepoUrl": {
+      "type": "string"
+    },
+    "commitId": {
+      "type": "string"
+    },
+    "humanFuncDescription": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "filePath": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "author": {
+              "type": "string"
+            },
+            "authorEmail": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "funcName": {
+              "type": "string"
+            },
+            "startLine": {
+              "type": "integer"
+            },
+            "endLine": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "filePath",
+            "description",
+            "author",
+            "authorEmail",
+            "date",
+            "funcName",
+            "startLine",
+            "endLine"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "gitRepoUrl",
+    "commitId",
+    "humanFuncDescription"
+  ]
+}
