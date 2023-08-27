@@ -12,6 +12,8 @@ def get_number_of_functions(index_name, client):
     funcs_nums = pd.DataFrame(columns=repos + [f"{repo}_count" for repo in repos], index=helper_funcs)
 
 
+    number_funcs = {}
+
     for repo in repos:
         for helper_func in helper_funcs:
             
@@ -41,13 +43,20 @@ def get_number_of_functions(index_name, client):
             
             funcs_nums.loc[helper_func][repo] = filenames
             funcs_nums.loc[helper_func][f"{repo}_count"] = len(filenames)
+        
+        funcs = set()
+        for file_list in funcs_nums[repo]:
+            for filename in file_list:
+                funcs.add(filename)
+        
+        number_funcs[repo] = len(funcs)
 
     if not os.path.isdir("../Query_CSVs"):
         os.makedirs("../Query_CSVs")
     
     funcs_nums.to_csv("../Query_CSVs/excel_query_1_results.csv")
 
-    return len(helper_funcs)
+    return len(helper_funcs), number_funcs
 
 
 if __name__ == "__main__":
@@ -59,6 +68,7 @@ if __name__ == "__main__":
 
     client = Elasticsearch("http://localhost:9200")
 
-    num_funcs = get_number_of_functions(index_name=index_name, client=client)
+    num_funcs, number_funcs = get_number_of_functions(index_name=index_name, client=client)
 
     print(f"Generated Excel for Query 1 - {num_funcs} helper functions")
+    print(number_funcs)

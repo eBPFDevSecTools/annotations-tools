@@ -20,7 +20,8 @@ def get_all_helper_functions(index_name, client):
     for d in responses:
         if "fields" in d and "helper" in d["fields"]:
             for helper in d["fields"]["helper"]:
-                helpers.add(helper)
+                if helper != "":
+                    helpers.add(helper)
 
     return list(helpers)
 
@@ -41,11 +42,13 @@ def get_all_maps_from_repo(index_name, client, repo):
         if "fields" in d:
             if "readMaps" in d["fields"]:
                 for map in d["fields"]["readMaps"]:
-                    maps.add(map)
+                    if map != "":
+                        maps.add(map)
             
             if "updateMaps" in d["fields"]:
                 for map in d["fields"]["updateMaps"]:
-                    maps.add(map)
+                    if map != "":
+                        maps.add(map)
 
     return list(maps)
 
@@ -66,11 +69,13 @@ def get_all_maps(index_name, client):
         if "fields" in d:
             if "readMaps" in d["fields"]:
                 for map in d["fields"]["readMaps"]:
-                    maps.add(map)
+                    if map != "":
+                        maps.add(map)
             
             if "updateMaps" in d["fields"]:
                 for map in d["fields"]["updateMaps"]:
-                    maps.add(map)
+                    if map != "":
+                        maps.add(map)
 
     return list(maps)
 

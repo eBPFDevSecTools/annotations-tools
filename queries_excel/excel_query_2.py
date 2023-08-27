@@ -10,11 +10,13 @@ def get_number_of_maps(index_name, client):
 
     maps_counts = pd.DataFrame(index=repos, columns=["Maps", "Counts"])
 
+    num_maps = {}
+
     for repo in repos:
         maps = get_all_maps_from_repo(index_name=index_name, client=client, repo=repo)
         maps_counts.loc[repo]["Maps"] = maps
         maps_counts.loc[repo]["Counts"] = len(maps)
-
+        
     if not os.path.isdir("../Query_CSVs"):
         os.makedirs("../Query_CSVs")
     

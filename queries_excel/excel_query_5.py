@@ -36,7 +36,7 @@ def dfs(index_name, client, func, repo, fcg):
 def get_FCGs(index_name, client):
     
     repos = get_all_repos(index_name=index_name, client=client)
-    print(repos)
+    # print(repos)
     FCG = {}
 
     for repo in repos:
