@@ -53,6 +53,8 @@ def get_number_of_functions(index_name, client):
 
     map_counts = pd.DataFrame(index=root_funcs, columns=repos + [f"{repo}_count" for repo in repos])
 
+    num_maps = {}
+
     for repo in repos:
         for func in root_funcs:
 
@@ -74,12 +76,18 @@ def get_number_of_functions(index_name, client):
             map_counts.loc[func][repo] = list(READONLY_MAPS)
             map_counts.loc[func][f"{repo}_count"] = len(READONLY_MAPS)
 
+        maps_ = set()
+        for maps_list in map_counts[repo]:
+            for f in maps_list:
+                maps_.add(f)
+
+        num_maps[repo] = len(maps_)
     if not os.path.isdir("../Query_CSVs"):
         os.makedirs("../Query_CSVs")
     
     map_counts.to_csv("../Query_CSVs/excel_query_8_results.csv")
 
-    return len(repos)
+    return len(repos), num_maps
 
 
 if __name__ == "__main__":
@@ -91,6 +99,7 @@ if __name__ == "__main__":
 
     client = Elasticsearch("http://localhost:9200")
 
-    num_repos = get_number_of_functions(index_name=index_name, client=client)
+    num_repos, num_maps = get_number_of_functions(index_name=index_name, client=client)
 
     print(f"Generated Excel for Query 8 - {num_repos} repos")
+    print(num_maps)

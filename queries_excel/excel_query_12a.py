@@ -54,6 +54,8 @@ def get_compatible_hookpoints(index_name, client):
     root_funcs = get_root_funcs(index_name=index_name, client=client)
 
     map_counts = pd.DataFrame(index=root_funcs, columns=repos + [f"{repo}_count" for repo in repos])
+    
+    num_hooks = {}
 
     for repo in repos:
         for func in root_funcs:
@@ -73,13 +75,20 @@ def get_compatible_hookpoints(index_name, client):
                 map_counts.loc[func][repo] = list(compatibleHookpoints)
                 map_counts.loc[func][f"{repo}_count"] = len(compatibleHookpoints)
             
+        hooks = set()
+
+        for hook_list in map_counts[repo]:
+            for f in hook_list:
+                hooks.add(f)
+        
+        num_hooks[repo] = len(hooks)
 
     if not os.path.isdir("../Query_CSVs"):
         os.makedirs("../Query_CSVs")
     
     map_counts.to_csv("../Query_CSVs/excel_query_12a_results.csv")
 
-    return len(repos)
+    return len(repos), num_hooks
 
 
 if __name__ == "__main__":
@@ -91,6 +100,7 @@ if __name__ == "__main__":
 
     client = Elasticsearch("http://localhost:9200")
 
-    num_repos = get_compatible_hookpoints(index_name=index_name, client=client)
+    num_repos, num_hooks = get_compatible_hookpoints(index_name=index_name, client=client)
 
     print(f"Generated Excel for Query 12a - {num_repos} repos")
+    print(num_hooks)

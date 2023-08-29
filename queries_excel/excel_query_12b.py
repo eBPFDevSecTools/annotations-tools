@@ -53,6 +53,8 @@ def get_helpers_in_FCG(index_name, client):
 
     map_counts = pd.DataFrame(index=root_funcs, columns=repos + [f"{repo}_count" for repo in repos])
 
+    num_helpers = {}
+
     for repo in repos:
         for func in root_funcs:
 
@@ -68,13 +70,20 @@ def get_helpers_in_FCG(index_name, client):
             map_counts.loc[func][repo] = list(HELPERS)
             map_counts.loc[func][f"{repo}_count"] = len(HELPERS)
             
+        helpers_ = set()
+
+        for helpers_list in map_counts[repo]:
+            for f in num_helpers:
+                helpers_.add(f)
+        
+        num_helpers[repo] = len(helpers_)
 
     if not os.path.isdir("../Query_CSVs"):
         os.makedirs("../Query_CSVs")
     
     map_counts.to_csv("../Query_CSVs/excel_query_12b_results.csv")
 
-    return len(repos)
+    return len(repos), num_helpers
 
 
 if __name__ == "__main__":
@@ -86,6 +95,7 @@ if __name__ == "__main__":
 
     client = Elasticsearch("http://localhost:9200")
 
-    num_repos = get_helpers_in_FCG(index_name=index_name, client=client)
+    num_repos, num_helpers = get_helpers_in_FCG(index_name=index_name, client=client)
 
     print(f"Generated Excel for Query 12b - {num_repos} repos")
+    print(num_helpers)

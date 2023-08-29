@@ -11,6 +11,8 @@ def get_number_of_maps(index_name, client):
 
     func_counts = pd.DataFrame(index=maps, columns=repos + [f"{repo}_count" for repo in repos])
 
+    number_funcs = {}
+
     for repo in repos:
         for map in maps:
             resp = client.search(index=index_name, pretty=True, fields=["File", "funcName"], source=False, size=1000, query={
@@ -37,6 +39,13 @@ def get_number_of_maps(index_name, client):
             
             func_counts.loc[map][repo] = num_funcs
             func_counts.loc[map][f"{repo}_count"] = len(num_funcs)
+        
+        funcs = set()
+        for func_list in func_counts[repo]:
+            for f in func_list:
+                funcs.add(f[0])
+        
+        number_funcs[repo] = len(funcs)
 
 
     if not os.path.isdir("../Query_CSVs"):
@@ -44,7 +53,7 @@ def get_number_of_maps(index_name, client):
     
     func_counts.to_csv("../Query_CSVs/excel_query_4_results.csv")
 
-    return len(repos)
+    return len(repos), number_funcs
 
 
 if __name__ == "__main__":
@@ -56,6 +65,7 @@ if __name__ == "__main__":
 
     client = Elasticsearch("http://localhost:9200")
 
-    num_repos = get_number_of_maps(index_name=index_name, client=client)
+    num_repos, funcs_set = get_number_of_maps(index_name=index_name, client=client)
 
     print(f"Generated Excel for Query 4 - {num_repos} repos")
+    print(funcs_set)
