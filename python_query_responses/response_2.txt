@@ -1,4 +1,0 @@
-command : python3 query_2.py --repo katran
-
-List of Maps - {'per_hckey_stats', 'hc_reals_map', 'reals', 'reals_stats', 'server_id_map', 'vip_map', 'lpm_src_v4', 'lpm_src_v6', 'decap_counters', 'global_lru_maps', 'ctl_array', 'pckt_srcs', 'hc_stats_map', 'stats', 'hc_pckt_srcs_map', 'lru_mapping', 'hc_ctrl_map', 'hc_key_map', 'lru_map', 'cntrs_array', 'decap_dst', 'hc_pckt_macs', 'ch_rings'}
-Number of Maps - 23

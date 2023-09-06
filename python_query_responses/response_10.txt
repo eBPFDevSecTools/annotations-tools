@@ -1,5 +1,0 @@
-command : python3 query_10.py --func sock6_xlate_rev_v4_in_v6
-
-Maps used throughout the FCG of function sock6_xlate_rev_v4_in_v6
-Read Maps :  ['LB4_REVERSE_NAT_SK_MAP', 'map', 'LB4_SERVICES_MAP_V2', 'METRICS_MAP', 'LB4_SERVICES_MAP_V2']
-Written Maps :  ['LB4_REVERSE_NAT_SK_MAP', 'METRICS_MAP']

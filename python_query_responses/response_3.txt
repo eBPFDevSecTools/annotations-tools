@@ -1,4 +1,0 @@
-command : python3 query_3.py --repo katran --map stats
-
-List of Functions - {'increment_quic_cid_drop_real_0', 'check_decap_dst', 'increment_quic_cid_version_stats', 'perform_global_lru_lookup', 'is_under_flood', 'get_packet_dst', 'process_packet', 'increment_quic_cid_drop_no_real'}
-Number of Functions - 8

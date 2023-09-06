@@ -1,4 +1,0 @@
-command : python3 query_11b.py --func ingress_node_firewall_main
-
-Pairs of Functions which obey consumer-producer relation
-[]

@@ -1,4 +1,0 @@
-command - python3 query_4.py --repo katran --map stats
-
-List of Functions - set()
-Number of Functions - 0

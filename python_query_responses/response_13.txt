@@ -1,4 +1,0 @@
-command : python3 query_13.py
-
-Average size of FCGs of all root functions
-52.93055555555556
