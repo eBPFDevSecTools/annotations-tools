@@ -32,7 +32,6 @@ def pairwise_similarity_scores_llama(data, type="cosine", k=20):
     for key1 in range(num_functions):
         for key2 in range(key1 + 1, num_functions):
             if "llama_embeddings" not in data[key1] or "llama_embeddings" not in data[key2]:
-                print("Here")
                 continue
 
             print(key1, key2)
@@ -51,10 +50,10 @@ if __name__ == '__main__':
     data = json.load(open("human_annotations_dense_vecs.json", "r"))
     top_k = 50
     func_pairs = pairwise_similarity_scores(data, k=top_k)
-    print("Done calculating similarity scores - Human")
+
     json.dump(func_pairs, open("human_annotations_sim_scores.json", "w"))
 
     data2 = json.load(open("data.json", "r"))
     func_pairs_2 = pairwise_similarity_scores_llama(data2, k=top_k)
-    print("Done calculating similarity scores - LLaMa")
+
     json.dump(func_pairs_2, open("llama_sim_scores.json", "w"))

@@ -3,7 +3,7 @@ import os
 import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel
-
+3
 class Encoder:
     def __init__(self, model_name: str):
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
