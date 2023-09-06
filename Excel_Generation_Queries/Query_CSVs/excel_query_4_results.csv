@@ -1,0 +1,102 @@
+,bcc,ebpf-samples,ingress-node-firewall-master,cilium,katran,ebpf-ratelimiter-main,bpf-filter-master,xdp-mptm-main,bcc_count,ebpf-samples_count,ingress-node-firewall-master_count,cilium_count,katran_count,ebpf-ratelimiter-main_count,bpf-filter-master_count,xdp-mptm-main_count
+ENCRYPT_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+iface_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+EGRESS_POLICY_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+CT_TAIL_CALL_BUFFER6,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+inner_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+SRV6_VRF_MAP4,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+SNAT_MAPPING_IPV4,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h']],[],[],[],[],0,0,0,1,0,0,0,0
+map_main,[],[],[],"[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h']]",[],[],[],[],0,0,0,2,0,0,0,0
+NODEPORT_NEIGH6,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nodeport.h']],[],[],[],[],0,0,0,1,0,0,0,0
+iface_ip_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+TUNNEL_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+hc_stats_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+LB4_SRC_RANGE_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+reals,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+LB_AFFINITY_MATCH_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+map + 1,[],"[['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/exposeptr.c'], ['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/mapoverflow.c'], ['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/exposeptr2.c'], ['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/mapunderflow.c']]",[],"[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h']]",[],"[['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c']]",[],[],0,4,0,4,0,2,0,0
+LB6_REVERSE_NAT_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+METRICS_MAP,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/metrics.h']],[],[],[],[],0,0,0,1,0,0,0,0
+LB6_SERVICES_MAP_V2,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+LB4_REVERSE_NAT_SK_MAP,[],[],[],"[['/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c']]",[],[],[],[],0,0,0,2,0,0,0,0
+cilium_capture_cache,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+IPV4_FRAG_DATAGRAMS_MAP,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/ipv4.h']],[],[],[],[],0,0,0,1,0,0,0,0
+SRV6_STATE_MAP6,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/egress_policies.h']],[],[],[],[],0,0,0,1,0,0,0,0
+rl_recv_count_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+CAPTURE4_RULES,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+SNAT_MAPPING_IPV6,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h']],[],[],[],[],0,0,0,1,0,0,0,0
+map_fd [0],[],[],[],[],[],"[['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c']]",[],[],0,0,0,0,0,8,0,0
+THROTTLE_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+LB6_AFFINITY_MAP,[],[],[],"[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h']]",[],[],[],[],0,0,0,2,0,0,0,0
+LB4_MAGLEV_MAP_OUTER,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+maglev_lut,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+CAPTURE6_RULES,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+LB4_HEALTH_MAP,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c']],[],[],[],[],0,0,0,1,0,0,0,0
+VTEP_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+LB6_MAGLEV_MAP_OUTER,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+hc_pckt_macs,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ctl_array,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+server_id_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+nolocal_lru_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+map_fd[4],[],[],[],[],[],"[['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c']]",[],[],0,0,0,0,0,8,0,0
+ctx,[],"[['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/wronghelper.c'], ['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/ctxoffset.c']]",[],[],[],[],[],[],0,2,0,0,0,0,0,0
+map_related,[],[],[],"[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/conntrack.h']]",[],[],[],[],0,0,0,2,0,0,0,0
+LB6_HEALTH_MAP,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c']],[],[],[],[],0,0,0,1,0,0,0,0
+map_fd [3],[],[],[],[],[],"[['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c']]",[],[],0,0,0,0,0,8,0,0
+vip_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+LB6_BACKEND_MAP_V2,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+SRV6_VRF_MAP6,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+hc_pckt_srcs_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+rl_ports_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+hc_ctrl_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+prev_prog_map_fd,[],[],[],[],[],"[['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c']]",[],[],0,0,0,0,0,2,0,0
+LB6_REVERSE_NAT_SK_MAP,[],[],[],"[['/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/bpf_sock.c']]",[],[],[],[],0,0,0,2,0,0,0,0
+CT_TAIL_CALL_BUFFER4,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+map_fd[1],[],[],[],[],[],"[['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c']]",[],[],0,0,0,0,0,8,0,0
+reals_stats,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+SRV6_STATE_MAP4,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/egress_policies.h']],[],[],[],[],0,0,0,1,0,0,0,0
+ingress_node_firewall_statistics_map,[],[],[['/home/sayandes/ebpf-projects-annotations/projects/ingress-node-firewall-master/original_source/bpf/ingress_node_firewall_kernel.c']],[],[],[],[],[],0,0,1,0,0,0,0,0
+map,[],"[['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/exposeptr.c'], ['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/mapoverflow.c'], ['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/exposeptr2.c'], ['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/mapunderflow.c']]",[],"[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nat.h']]",[],[],[],[],0,4,0,4,0,0,0,0
+global_lru_maps,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+SRV6_POLICY_MAP4,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+rl_window_map,[],[],[],[],[],"[['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/transformed/ratelimiting_kern-TC.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/transformed/ratelimiting_kern-TC.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_kern.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_kern.c']]",[],[],0,0,0,0,0,4,0,0
+LB4_BACKEND_MAP_V2,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+lru_mapping,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+LB4_AFFINITY_MAP,[],[],[],"[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h'], ['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/lb.h']]",[],[],[],[],0,0,0,2,0,0,0,0
+test_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ingress_node_firewall_table_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+SRV6_SID_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+rl_drop_count_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+lru_map,[],[],[],[],"[['/home/palani/github/ebpf-projects-annotations/examples/katran/pckt_parsing.h'], ['/home/palani/github/ebpf-projects-annotations/examples/katran/balancer_kern.c']]",[],[],[],0,0,0,0,2,0,0,0
+stats,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+decap_counters,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+SRV6_POLICY_MAP6,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+lpm_src_v4,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+LB4_SERVICES_MAP_V2,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+mptm_tnl_info_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+cntrs_array,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+decap_dst,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+CIDR6_LMAP_NAME,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+NODEPORT_NEIGH4,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/lib/nodeport.h']],[],[],[],[],0,0,0,1,0,0,0,0
+CIDR6_HMAP_NAME,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ENDPOINTS_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+per_hckey_stats,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+IP_MASQ_AGENT_IPV4,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+CIDR4_HMAP_NAME,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+rl_config_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+hc_key_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+bytecount_map,[],[],[],[['/home/palani/github/ebpf-projects-annotations/examples/cilium/custom/bytecount.h']],[],[],[],[],0,0,0,1,0,0,0,0
+ch_rings,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+hc_reals_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+iface_stat_map,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+LB4_REVERSE_NAT_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+EP_POLICY_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+map2,[],[['/home/palani/github/palanik1/ebpf-projects-annotations/projects/ebpf-samples/original_source/badrelo.c']],[],[],[],[],[],[],0,1,0,0,0,0,0,0
+CIDR4_LMAP_NAME,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+lpm_src_v6,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+cilium_xdp_scratch,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+map_fd [2],[],[],[],[],[],"[['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c']]",[],[],0,0,0,0,0,8,0,0
+LB6_SRC_RANGE_MAP,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+array_of_maps,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+pckt_srcs,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+map_fd,[],[],[],[],[],"[['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c'], ['/home/palani/github/opened_extraction/examples/ebpf-ratelimiter-main/ratelimiting_user.c']]",[],[],0,0,0,0,0,8,0,0

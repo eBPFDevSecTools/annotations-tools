@@ -1,0 +1,145 @@
+,cilium,bpf-filter-master,xdp-mptm-main,ingress-node-firewall-master,bcc,katran,ebpf-samples,ebpf-ratelimiter-main,cilium_count,bpf-filter-master_count,xdp-mptm-main_count,ingress-node-firewall-master_count,bcc_count,katran_count,ebpf-samples_count,ebpf-ratelimiter-main_count
+tail_ipv6_to_endpoint,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+mptm_encap,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+bpf_sockmap,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+xdp_root,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock4_post_bind,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+test_repro,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_rev_nodeport_lb4,"['METRICS_MAP', 'IPV4_FRAG_DATAGRAMS_MAP']",[],[],[],[],[],[],[],2,0,0,0,0,0,0,0
+tail_nodeport_ipv4_dsr,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+tail_handle_ipv4_cont,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+handle_policy,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+RAW_TRACEPOINT_PROBE,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock6_recvmsg,"['LB4_REVERSE_NAT_SK_MAP', 'METRICS_MAP', 'LB6_REVERSE_NAT_SK_MAP']",[],[],[],[],[],[],[],3,0,0,0,0,0,0,0
+ipv4_l4_csum,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__be64_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ipv6_addr_is_mapped,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_ipv4_policy,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+xdp_val,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock4_connect,"['LB4_REVERSE_NAT_SK_MAP', 'METRICS_MAP', 'LB4_AFFINITY_MAP']",[],[],[],[],[],[],[],3,0,0,0,0,0,0,0
+xdp_load_bytes,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_ipv4_host_policy_ingress,"['METRICS_MAP', 'IPV4_FRAG_DATAGRAMS_MAP']",[],[],[],[],[],[],[],2,0,0,0,0,0,0,0
+sock6_connect,"['LB6_REVERSE_NAT_SK_MAP', 'METRICS_MAP', 'LB6_AFFINITY_MAP', 'LB4_REVERSE_NAT_SK_MAP', 'LB4_AFFINITY_MAP']",[],[],[],[],[],[],[],5,0,0,0,0,0,0,0
+__swahw32s,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+test,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+from_netdev,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+jhash,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_lb_ipv6,"['IPV4_FRAG_DATAGRAMS_MAP', 'METRICS_MAP', 'NODEPORT_NEIGH6', 'LB6_AFFINITY_MAP']",[],[],[],[],[],[],[],4,0,0,0,0,0,0,0
+tail_handle_ipv4_from_netdev,"['NODEPORT_NEIGH4', 'METRICS_MAP', 'LB4_AFFINITY_MAP', 'IPV4_FRAG_DATAGRAMS_MAP']",[],[],[],[],[],[],[],4,0,0,0,0,0,0,0
+bpf_redir_proxy,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+gue_encap_v6,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__cpu_to_le32p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+bpf_filter,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+from_host,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+csum_diff,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ingress_node_firewall_process,[],[],[],['ingress_node_firewall_statistics_map'],[],[],[],[],0,0,0,1,0,0,0,0
+tail_handle_ipv6_cont,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+tail_ipv6_host_policy_ingress,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+l3_csum_replace,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+handle_to_container,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+gue_record_route,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ipv6_load_nexthdr,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__bpf_no_builtin_memcpy,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__swab64s,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__bpf_no_builtin_memcmp,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ipv4_extract_tuple,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+bpf_xdp_entry,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+assign_socket,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_rev_nodeport_lb6,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+__cpu_to_be32p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock4_pre_bind,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+caller,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+custom_hook,['bytecount_map'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+mptm_pass,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_srv6_decap,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+tail_handle_nat_fwd_ipv6,"['METRICS_MAP', 'map']",[],[],[],[],[],[],[],2,0,0,0,0,0,0,0
+__cpu_to_le64p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+healthcheck_encap,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_nodeport_nat_ipv4,"['IPV4_FRAG_DATAGRAMS_MAP', 'METRICS_MAP', 'map']",[],[],[],[],[],[],[],3,0,0,0,0,0,0,0
+__swab16s,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_nodeport_ipv6_dsr,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+__cpu_to_le16p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+jhash_1word,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+main,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock6_sendmsg,"['LB6_REVERSE_NAT_SK_MAP', 'METRICS_MAP', 'LB6_AFFINITY_MAP', 'LB4_REVERSE_NAT_SK_MAP', 'LB4_AFFINITY_MAP']",[],[],[],[],[],[],[],5,0,0,0,0,0,0,0
+__swab32s,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+read_write_packet_start,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+xdp_store_bytes,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+combine_ports,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ct4_cilium_dbg_tuple,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__swahb32s,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+encap_v4,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+to_host,"['METRICS_MAP', 'IPV4_FRAG_DATAGRAMS_MAP']",[],[],[],[],[],[],[],2,0,0,0,0,0,0,0
+send_signal,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__bpf_no_builtin_memmove,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__le16_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_icmp6_send_time_exceeded,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ct_delete6,['map'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+handle_policy_egress,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+test_packet_access,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+_send_drop_notify,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+sock6_getpeername,"['LB4_REVERSE_NAT_SK_MAP', 'METRICS_MAP', 'LB6_REVERSE_NAT_SK_MAP']",[],[],[],[],[],[],[],3,0,0,0,0,0,0,0
+gue_encap_v4,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ipv4_load_daddr,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+rol32,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__le32_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_handle_arp,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+mptm_decap,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__be16_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_icmp6_send_echo_reply,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock6_pre_bind,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+hc_encap_ipip,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+xdp_prog_simple,[],[],[],[],[],['lru_map'],[],[],0,0,0,0,0,1,0,0
+l4_csum_replace,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+memmove,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+to_netdev,"['METRICS_MAP', 'IPV4_FRAG_DATAGRAMS_MAP']",[],[],[],[],[],[],[],2,0,0,0,0,0,0,0
+sock4_getpeername,"['LB4_REVERSE_NAT_SK_MAP', 'METRICS_MAP']",[],[],[],[],[],[],[],2,0,0,0,0,0,0,0
+hello,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ipv6_load_paylen,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__cpu_to_be64p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock6_post_bind,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__fswahw32,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+func,[],[],[],[],[],[],['map'],[],0,0,0,0,0,0,1,0
+tail_handle_ipv4_from_host,"['NODEPORT_NEIGH4', 'METRICS_MAP', 'LB4_AFFINITY_MAP', 'IPV4_FRAG_DATAGRAMS_MAP']",[],[],[],[],[],[],[],4,0,0,0,0,0,0,0
+ipv6_extract_tuple,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_srv6_encap,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+tail_icmp6_handle_ns,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_lb_ipv4,"['NODEPORT_NEIGH4', 'METRICS_MAP', 'LB4_AFFINITY_MAP', 'IPV4_FRAG_DATAGRAMS_MAP']",[],[],[],[],[],[],[],4,0,0,0,0,0,0,0
+__bpf_no_builtin_memset,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+handle_xgress,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+__revalidate_data_pull,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_handle_nat_fwd_ipv4,"['IPV4_FRAG_DATAGRAMS_MAP', 'METRICS_MAP', 'map']",[],[],[],[],[],[],[],3,0,0,0,0,0,0,0
+handle_lxc_traffic,"['METRICS_MAP', 'IPV4_FRAG_DATAGRAMS_MAP']",[],[],[],[],[],[],[],2,0,0,0,0,0,0,0
+hc_encap_gue,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+TRACEPOINT_PROBE,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__fswahb32,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+callee,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+reallocate_invalidates,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+bpf_tail_call_static,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_ipv6_policy,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+__cpu_to_be16p,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+to_overlay,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+mptm_redirect,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+balancer_ingress,[],[],[],[],[],['lru_map'],[],[],0,0,0,0,0,1,0,0
+tail_handle_ipv6_from_netdev,"['IPV4_FRAG_DATAGRAMS_MAP', 'METRICS_MAP', 'NODEPORT_NEIGH6', 'LB6_AFFINITY_MAP']",[],[],[],[],[],[],[],4,0,0,0,0,0,0,0
+submit_event,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+sock4_sendmsg,"['LB4_REVERSE_NAT_SK_MAP', 'METRICS_MAP', 'LB4_AFFINITY_MAP']",[],[],[],[],[],[],[],3,0,0,0,0,0,0,0
+__fswab64,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__send_drop_notify,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__le64_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+encap_v6,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_ipv4_to_endpoint,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+sock4_recvmsg,"['LB4_REVERSE_NAT_SK_MAP', 'METRICS_MAP']",[],[],[],[],[],[],[],2,0,0,0,0,0,0,0
+jhash_2words,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_srv6_reply,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+ct_delete4,['map'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+ipv6_addr_in_net,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+pktcntr,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+tail_handle_ipv6_from_host,"['IPV4_FRAG_DATAGRAMS_MAP', 'METRICS_MAP', 'NODEPORT_NEIGH6', 'LB6_AFFINITY_MAP']",[],[],[],[],[],[],[],4,0,0,0,0,0,0,0
+tail_nodeport_nat_ipv6,"['METRICS_MAP', 'map']",[],[],[],[],[],[],[],2,0,0,0,0,0,0,0
+__fswab16,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+from_network,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+hash_64,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+from_overlay,['METRICS_MAP'],[],[],[],[],[],[],[],1,0,0,0,0,0,0,0
+foo,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0
+__be32_to_cpup,[],[],[],[],[],[],[],[],0,0,0,0,0,0,0,0

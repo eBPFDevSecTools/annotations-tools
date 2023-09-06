@@ -1,0 +1,9 @@
+,Average Size
+ebpf-samples,187.90277777777777
+xdp-mptm-main,3.5
+ebpf-ratelimiter-main,187.90277777777777
+katran,22.647058823529413
+ingress-node-firewall-master,4.0
+bpf-filter-master,4.230769230769231
+bcc,1.0
+cilium,242.1727272727273
