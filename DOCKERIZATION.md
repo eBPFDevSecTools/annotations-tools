@@ -8,10 +8,6 @@
 
     `tar -xf dockerization.tar.xz`
 
-- Execute the following command
-
-    `cd dockerization`
-
 - Ensure that there is a DockerFile and a docker-compose.yml file in the extracted folder. There will be two shell scripts namely "setup.sh" and "clean.sh".
 
     `chmod +x setup.sh`
